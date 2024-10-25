@@ -1,0 +1,169 @@
+body {
+  background-color: rgba(255, 123, 0, 0.795); 
+}
+
+/* Estilo da miniatura */
+* Estilo da miniatura (primeira imagem) */
+.gallery-items img {
+    width: 150px;
+    cursor: pointer;
+}
+
+/* Modal escondido por padrão */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.modal-image {
+  width: 80%;
+  max-width: 600px;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caption {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Fechar o modal */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#modal1:target, #modal2:target, #modal3:target, #modal4:target, #modal5:target, #modal6:target, #modal7:target, #modal8:target, #modal9:target{
+display: flex;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;          /* Faz com que as imagens se quebrem em várias linhas */
+  justify-content: center;  /* Centraliza as imagens no contêiner */
+  align-items: center;      /* Alinha verticalmente ao centro da área disponível */
+  width: 50%;               /* Define a largura do contêiner */
+  margin: 0 auto;          /* Centraliza o contêiner horizontalmente */
+  padding-left: 10px;      /* Espaço à esquerda (opcional) */
+  padding-top: 30px; 
+}
+
+/* Estilo das imagens */
+.galeria-items img {
+  width: 150px;             /* Largura da miniatura */
+  height: auto;
+  margin: 10px;             /* Espaçamento entre as imagens */
+  cursor: pointer;
+}
+
+/* Define o alinhamento responsivo */
+@media (min-width: 768px) {
+  .galeria-items {
+      flex: 1 1 30%;        /* Cada imagem ocupará aproximadamente 30% da linha */
+  }
+}
+
+.container {
+    display: flex;                /* Usando flexbox para o layout */
+    width: 100%;   
+    box-sizing: border-box;              /* O container ocupa toda a largura da tela */
+}
+
+.imagem-grande {
+  width: 50%;                  /* Ocupa a outra metade da largura */
+  padding: 10px;           /* Espaçamento interno */
+}
+
+.imagem-grande img {
+  width: 200%;                 /* A imagem ocupa toda a largura do contêiner */
+  height: auto;                /* Mantém a proporção da imagem */
+}
+
+.footer {
+  background-color: #333; /* Cor de fundo do rodapé */
+  color: #fff;            /* Cor do texto */
+  text-align: center;     /* Texto centralizado */
+  padding: 20px;          /* Espaçamento interno */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer{
+background-color: rgb(41, 13, 94);
+}
+.title{
+  background-color: rgb(76, 221, 63);
+  padding-top: 15px
+}
+*{
+padding: 0;
+margin: 0;
+font-family: monospace;
+}
+ul {
+  list-style: none;
+  background: #425e9b;
+}
+ul li {
+display: inline-block;
+position: relative;
+}
+ul li a {
+display: block;
+padding: block;
+padding: 20px 25px;
+color: #fff;
+text-decoration: none;
+text-align: center;
+font-size: 20px;
+}
+ul li ul.dropdown li{
+display: block;
+}
+ul li ul.dropdown{
+width: 100%;
+background: #22438c;
+position: absolute;
+z-index: 999;
+display: none;
+}
+ul li a:hover{
+background: #425e9b;
+}
+ul li:hover ul.dropdown{
+display:block
+
+}
+.agradecimento{
+  padding: 25px; /* Adiciona espaço ao redor do texto, afastando-o das margens */
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+  max-width: 800px; /* Limita a largura máxima do contêiner */
+  background-color: rgb(76, 221, 63); /* Cor de fundo para destacar */
+  border-radius: 30px; /* Bordas arredondadas, opcional */
+  font-size: 15px;
+  margin: 0 auto;
+}
+.ultima-imagem {
+  text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+}
+
+img {
+  max-width: 100%; /* A imagem não ultrapassa a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
